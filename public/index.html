@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Games I guess</title>
+    <!-- <documentation at http://demos.jquerymobile.com/1.4.1/ > -->
+  
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascripts/index.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start of Home page -->
+    <div data-role="page"  id="home">
+            <!--  login page header -->
+            <div data-role="header" data-theme='b'>
+               <!-- helpful location   -->
+              <!-- https://demos.jquerymobile.com/1.2.0/docs/toolbars/docs-navbar.html -->
+
+              <div class="titlebar">
+                <h1>The Amazing Video Game Warehouse!</h1>
+                <div class="logindiv">
+                  <label for="login">Log-in</label>
+                  <input type="text" id="login" class="login" placeholder="User ID">
+                </div>
+              </div>
+                <div data-role="navbar"  data-theme='c'>
+                    <ul>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#page1">Search</a></li>
+                      <li><a href="#page2">Sort</a></li>
+                      <li><a href="#page3">Submit a Review</a></li>
+                    </ul>
+                  </div><!-- /navbar -->
+               
+            </div>
+            <!--  login page content -->
+            <div data-role="content" data-theme='e'>
+              <h2>Hey here's a list of games or something:</h2>
+              <div data-role="collapsible-set" data-theme="b" data-content-theme="a" id=divUserlist></div>
+            </div>
+              
+            <!--  login page footer -->
+            <div data-role="footer" data-theme='b'>
+                    <h1>Copyright 2020 by Carl Nelson</h1>
+            </div>
+        </div>
+
+
+        <div data-role="page"  id="page1">
+            <!--  page1 page header -->
+            <div data-role="header" data-theme='b'>
+              <div class="titlebar">
+                <h1>The Amazing Video Game Warehouse!</h1>
+                <div class="logindiv">
+                  <label for="login2">Log-in</label>
+                  <input type="text" id="login2" class="login" placeholder="User ID">
+                </div>
+              </div>
+              <div data-role="navbar"  data-theme='c'>
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Sort</a></li>
+                    <li><a href="#page3">Submit a Review</a></li>
+                  </ul>
+                </div><!-- /navbar -->
+          </div>
+            <!-- t page content -->
+            <div data-role="content" data-theme='e'>
+                <h2>This page will allow you to search for a game based on a criteria, e.g. name, year,
+                   possibly genre if I feel like it</h2>
+            </div>
+              
+            <!--  newaccount page footer -->
+            <div data-role="footer" data-theme='b'>
+              <h1>Copyright 2020 by Carl Nelson</h1>
+            </div>
+        </div>
+
+
+
+    <!-- Start of gamelost page -->
+    <div data-role="page"  id="page2">
+            <!--  gamelost page header -->
+            <div data-role="header" data-theme='b'>
+              <div class="titlebar">
+                <h1>The Amazing Video Game Warehouse!</h1>
+                <div class="logindiv">
+                  <label for="login3">Log-in</label>
+                  <input type="text" id="login3" class="login" placeholder="User ID">
+                </div>
+              </div>
+              <div data-role="navbar"  data-theme='c'>
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Sort</a></li>
+                    <li><a href="#page3">Submit a Review</a></li>
+                  </ul>
+                </div><!-- /navbar -->
+          </div>
+            <!--  gamelost page content -->
+            <div data-role="content" data-theme='e'>
+              <p>For now I'm just going to let the user sort the list of games based on some criteria on this page.</p>
+            </div>
+              
+            <!--  gamelost page footer -->
+            <div data-role="footer" data-theme='b'>
+              <h1>Copyright 2020 by Carl Nelson</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start of uploadReview page -->
+    <div data-role="page"  id="page3">
+            <!--  gamewon page header -->
+            <div data-role="header" data-theme='b'>
+              <div class="titlebar">
+                <h1>The Amazing Video Game Warehouse!</h1>
+                <div class="logindiv">
+                  <label for="login4">Log-in</label>
+                  <input type="text" id="login4" class="login" placeholder="User ID">
+                </div>
+              </div>
+              <div data-role="navbar"  data-theme='c'>
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#page1">Search</a></li>
+                    <li><a href="#page2">Sort</a></li>
+                    <li><a href="#page3">Submit a Review</a></li>
+                  </ul>
+                </div><!-- /navbar -->
+          </div>
+            <!--  gamewon page content -->
+            <div data-role="content" data-theme='e'>
+                <p> 
+                   This page will let the user submit a review for a game, which will then be associated with that game,
+                   and be visible on the other pages if the user clicks the button to show reviews on a game.
+                   That's not gonna be as tricky as it might sound, since we're working with jquery here.
+                </p>
+                
+            </div>
+              
+            <!--  gamewon page footer -->
+            <div data-role="footer" data-theme='b'>
+              <h1>Copyright 2020 by Carl Nelson</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
