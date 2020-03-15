@@ -257,7 +257,7 @@ function addReview(review){
   // create request object
   const request = new Request('/users/addReview', {
       method: 'POST',
-      body: JSON.stringify(game),
+      body: JSON.stringify(review),
       headers: new Headers({
           'Content-Type': 'application/json'
       })
